@@ -48,7 +48,7 @@ module.exports.run = async function({ api, event, Users }) {
   if (event.logMessageData.addedParticipants && Array.isArray(event.logMessageData.addedParticipants) && event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     //api.changeNickname(`𝗕𝗢𝗧 ${(!global.config.BOTNAME) ? "Buddy" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
 
-    let gifUrl = 'https://cdn.fbsbx.com/v/t59.2708-21/411618281_737489451591731_6258807383906226824_n.gif?_nc_cat=105&ccb=1-7&_nc_sid=cf94fc&_nc_ohc=vpau4_zZiXcQ7kNvgH_hE27&_nc_ht=cdn.fbsbx.com&oh=03_Q7cD1QFjXnUVqqBCCxsvVhDTLJNrJ8JwWW8iimsSjjf6CD3YPA&oe=66C19281';
+    let gifUrl = 'https://video.xx.fbcdn.net/v/t42.3356-2/451445905_7773113689405028_1777916211025602713_n.mp4?_nc_cat=101&ccb=1-7&_nc_sid=4f86bc&_nc_ohc=IsKSqoz8-xQQ7kNvgFhZ847&_nc_ht=video.xx&oh=03_Q7cD1QE6CMMo9C1K3PnwOidY3VEHfVj5WdoGc5aXqWrbPsk0Xw&oe=66C18E53&dl=1';
 let gifPath = __dirname + '/Nayan/join/join.gif';
 
 axios.get(gifUrl, { responseType: 'arraybuffer' })
