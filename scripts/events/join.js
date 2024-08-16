@@ -48,7 +48,7 @@ module.exports.run = async function({ api, event, Users }) {
   if (event.logMessageData.addedParticipants && Array.isArray(event.logMessageData.addedParticipants) && event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     //api.changeNickname(`𝗕𝗢𝗧 ${(!global.config.BOTNAME) ? "Buddy" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
 
-    let gifUrl = 'https://cdn.fbsbx.com/v/t59.2708-21/378467350_721199869836997_8619669001333909075_n.gif?_nc_cat=107&ccb=1-7&_nc_sid=cf94fc&_nc_ohc=roKvHCUbqdIQ7kNvgHsD64k&_nc_ht=cdn.fbsbx.com&oh=03_Q7cD1QGC1ORyR3_WKcrG46WoFMxDTA84HpIB9LVEKFpH2RFKSw&oe=66C19D51';
+    let gifUrl = 'https://cdn.fbsbx.com/v/t59.2708-21/411618281_737489451591731_6258807383906226824_n.gif?_nc_cat=105&ccb=1-7&_nc_sid=cf94fc&_nc_ohc=vpau4_zZiXcQ7kNvgH_hE27&_nc_ht=cdn.fbsbx.com&oh=03_Q7cD1QFjXnUVqqBCCxsvVhDTLJNrJ8JwWW8iimsSjjf6CD3YPA&oe=66C19281';
 let gifPath = __dirname + '/Nayan/join/join.gif';
 
 axios.get(gifUrl, { responseType: 'arraybuffer' })
@@ -56,7 +56,7 @@ axios.get(gifUrl, { responseType: 'arraybuffer' })
     fs.writeFileSync(gifPath, response.data);
   if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     api.changeNickname(`[ ${global.config.PREFIX} ] • ➠${(!global.config.BOTNAME) ? "bot" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
-    return api.sendMessage("🧋Izumikas Husband Cursed Xio is Back!🎐", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamualaykum☘️
+    return api.sendMessage("🧋Izumikas Husband Cursed Xio is Back!🎐", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\n🧋Accepted By Cursed Xio🎐☘️
 <------------------------------>  
 BOT CONNECTED SUCCESFUL !!! 
 
@@ -66,13 +66,13 @@ APPROVAL ALLOW IN THIS GROUP!!!
 <------------------------------>
 AND FOR ANY COMPLAINTS OR CONTACT BOT OPERATOR 
 
-ADMIN FACEBOOK : CURSED XIO / AXONIST YT
+ADMIN FACEBOOK : 🧋CURSED XIO & 🎐AXONIST YT
 
 🟣Facebook Account Link: 
 
 https://www.facebook.com/classic.ranking.37
 
-🔵 CREDIT : SAI MOON YOSHIDA
+🔵 CREDIT :🧋 SAI MOON YOSHIDA🎐
 
 🟢 MESSENGER GROUP : https://m.me/j/AbZHdj67j0Zx_fLb/`, attachment: fs.createReadStream(gifPath)}, threadID));
   }})
