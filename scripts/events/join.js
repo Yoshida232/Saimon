@@ -49,14 +49,14 @@ module.exports.run = async function({ api, event, Users }) {
     //api.changeNickname(`𝗕𝗢𝗧 ${(!global.config.BOTNAME) ? "Buddy" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
 
     let gifUrl = 'https://cdn.fbsbx.com/v/t59.2708-21/378467350_721199869836997_8619669001333909075_n.gif?_nc_cat=107&ccb=1-7&_nc_sid=cf94fc&_nc_ohc=roKvHCUbqdIQ7kNvgHsD64k&_nc_ht=cdn.fbsbx.com&oh=03_Q7cD1QGC1ORyR3_WKcrG46WoFMxDTA84HpIB9LVEKFpH2RFKSw&oe=66C19D51';
-let gifPath = __dirname + '/Cursed Xio/join/join.gif';
+let gifPath = __dirname + '/Nayan/join/join.gif';
 
 axios.get(gifUrl, { responseType: 'arraybuffer' })
 .then(response => {
     fs.writeFileSync(gifPath, response.data);
   if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     api.changeNickname(`[ ${global.config.PREFIX} ] • ➠${(!global.config.BOTNAME) ? "bot" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
-    return api.sendMessage("Cursed Xio is Back!", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamualaykum☘️
+    return api.sendMessage("🧋Izumikas Husband Cursed Xio is Back!🎐", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamualaykum☘️
 <------------------------------>  
 BOT CONNECTED SUCCESFUL !!! 
 
@@ -66,14 +66,15 @@ APPROVAL ALLOW IN THIS GROUP!!!
 <------------------------------>
 AND FOR ANY COMPLAINTS OR CONTACT BOT OPERATOR 
 
-DEVELOPER : Cursed Xio
+ADMIN FACEBOOK : CURSED XIO / AXONIST YT
 
 🟣Facebook Account Link: 
 
 https://www.facebook.com/classic.ranking.37
 
-🔵CREDIT : AXONIST YT
-🟢XIO | CPM GROUP LINK: https://m.me/j/Aba9mzBNTXzVgg21/`, attachment: fs.createReadStream(gifPath)}, threadID));
+🔵 CREDIT : SAI MOON YOSHIDA
+
+🟢 MESSENGER GROUP : https://m.me/j/AbZHdj67j0Zx_fLb/`, attachment: fs.createReadStream(gifPath)}, threadID));
   }})
 .catch(error => {
     console.error(error);
@@ -81,9 +82,9 @@ https://www.facebook.com/classic.ranking.37
   }
   else {
     try {
-      if (!fs.existsSync(__dirname + `/Cursed Xio/font/Semi.ttf`)) {
+      if (!fs.existsSync(__dirname + `/Nayan/font/Semi.ttf`)) {
         let getfont = (await axios.get(fontlink, { responseType: "arraybuffer" })).data;
-        fs.writeFileSync(__dirname + `/Cursed Xio/font/Semi.ttf`, Buffer.from(getfont, "utf-8"));
+        fs.writeFileSync(__dirname + `/Nayan/font/Semi.ttf`, Buffer.from(getfont, "utf-8"));
       };
       const { createReadStream, existsSync, mkdirSync, readdirSync } = global.nodemodule["fs-extra"];
       let { threadName, participantIDs } = await api.getThreadInfo(threadID);
@@ -100,8 +101,8 @@ https://www.facebook.com/classic.ranking.37
       // console.log(event.logMessageData.addedParticipants)
       var id = [];
       for (let o = 0; o < event.logMessageData.addedParticipants.length; o++) {
-        let pathImg = __dirname + `/Cursed Xio/join/${o}.png`;
-        let pathAva = __dirname + `/Cursed Xio/join/avt.png`;
+        let pathImg = __dirname + `/Nayan/join/${o}.png`;
+        let pathAva = __dirname + `/Nayan/join/avt.png`;
         let avtAnime = (await axios.get(encodeURI(
           `https://graph.facebook.com/${event.logMessageData.addedParticipants[o].userFbId}/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`), { responseType: "arraybuffer" })).data;
         var ok = [
@@ -117,7 +118,7 @@ https://www.facebook.com/classic.ranking.37
         var avatar = await this.circle(pathAva);
         let baseImage = await loadImage(pathImg);
         let baseAva = await loadImage(avatar);
-        registerFont(__dirname + `/Cursed Xio/font/Semi.ttf`, {
+        registerFont(__dirname + `/Nayan/font/Semi.ttf`, {
           family: "Semi"
         });
         let canvas = createCanvas(1902, 1082);
