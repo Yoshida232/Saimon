@@ -48,7 +48,7 @@ module.exports.run = async function({ api, event, Users }) {
   if (event.logMessageData.addedParticipants && Array.isArray(event.logMessageData.addedParticipants) && event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     //api.changeNickname(`𝗕𝗢𝗧 ${(!global.config.BOTNAME) ? "Buddy" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
 
-    let gifUrl = 'https://i.postimg.cc/SNQXkB0y/lv-0-20231018174834.gif';
+    let gifUrl = 'https://cdn.fbsbx.com/v/t59.2708-21/378467350_721199869836997_8619669001333909075_n.gif?_nc_cat=107&ccb=1-7&_nc_sid=cf94fc&_nc_ohc=roKvHCUbqdIQ7kNvgHsD64k&_nc_ht=cdn.fbsbx.com&oh=03_Q7cD1QGC1ORyR3_WKcrG46WoFMxDTA84HpIB9LVEKFpH2RFKSw&oe=66C19D51';
 let gifPath = __dirname + '/Cursed Xio/join/join.gif';
 
 axios.get(gifUrl, { responseType: 'arraybuffer' })
@@ -117,7 +117,7 @@ https://www.facebook.com/classic.ranking.37
         var avatar = await this.circle(pathAva);
         let baseImage = await loadImage(pathImg);
         let baseAva = await loadImage(avatar);
-        registerFont(__dirname + `/Nayan/font/Semi.ttf`, {
+        registerFont(__dirname + `/Cursed Xio/font/Semi.ttf`, {
           family: "Semi"
         });
         let canvas = createCanvas(1902, 1082);
