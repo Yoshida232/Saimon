@@ -17,225 +17,41 @@ const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
   var link = [
-     "https://i.postimg.cc/wTZJ1Yvb/images-1-29.jpg",
-    
-    "https://i.postimg.cc/ZRN79xP1/97420.jpg",
-
-    "https://i.postimg.cc/tCB54cQs/27712360-320x180.jpg",
-
-    "https://i.postimg.cc/Mp4myjGx/556-contact-01749889097.jpg",
-
-    "https://i.postimg.cc/rm2GHXWP/images-2022-08-16-T112453-202.jpg",
-
-    "https://i.postimg.cc/ZYcPwQqw/www-bangla-xxx-com.jpg",
-
-    "https://i.postimg.cc/SQvRQL1y/990-young.jpg",
-
-    "https://i.postimg.cc/FHQSb5tW/horny-booby-girl-moaning-hard-fingering-pussy.jpg",
-
-"https://i.postimg.cc/0NzwGp5n/Hot-Indian-lovers-standing-sex-MMS.jpg",
-
-"https://i.postimg.cc/02H5Yh6g/Hot-Desi-girl-striptease-nude-dance.jpg",
-
-"https://i.postimg.cc/CMQ9m044/naughty-Bhabhi-licking-own-nipples.jpg",
-
-"https://i.postimg.cc/RFjyCQhD/cute-girl-showing-her-big-round-boobs.jpg",
-
-"https://i.postimg.cc/VsqDbcV6/beautiful-Pakistani-girl-salwar-striptease-show.jpg",
-
-"https://i.postimg.cc/kXZ6J2vt/sexy-Girl-shows-boobs-and-pussy-many-clips-merged.jpg",
-
-"https://i.postimg.cc/XYkrws09/sexy-horny-girl-fingering-masturbating-with-bottle.jpg",
-
-"https://i.postimg.cc/g03mvQWD/10-272.jpg",
-
-    "https://i.postimg.cc/7L1jPT0H/young-lovers-enjoying-nude-sex-on-selfie-cam.jpg",
-
-"https://i.postimg.cc/fRnH3RwJ/foreplay-sex-with-beautiful-Bhabhi-before-fucking.jpg",
-
-"https://i.postimg.cc/Hkgfq28Z/NRI-Punjabi-girl-showing-her-big-boobies.jpg",
-
-"https://i.postimg.cc/yNWntgjp/unsatisfied-Desi-Milf-showing-her-big-clit.jpg",
-
-"https://i.postimg.cc/NjCk6Gt6/Desi-girl-showing-her-cute-small-boobies-on-VC.jpg",
-
-"https://i.postimg.cc/7YW5X5CZ/Desi-couple-hot-romance-in-shower.jpg",
-
-"https://i.postimg.cc/xTCkKv1Z/Bangladeshi-cute-village-girl-showing-boobs-on-video-call.jpg",
-
-"https://i.postimg.cc/V6kw3FpQ/Indian-girl-shows-her-boobs-and-pussy.jpg",
-
-"https://i.postimg.cc/hjQnDGDp/sexy-ass-Bhabhi-fucked-doggy-style-with-moanings-1.jpg",
-
-"https://i.postimg.cc/13W1DF4v/cute-college-girl-showing-her-shaved-pussy-on-VC.jpg",
-
-"https://i.postimg.cc/Hn0fncf4/beautiful-college-girl-showing-her-tiny-tits.jpg",
-
-"https://i.postimg.cc/8PKZHmBf/Pakistani-mature-girl-paid-to-expose-her-assets.jpg",
-
-"https://i.postimg.cc/QMLk44BC/skinny-Desi-girl-masturbating-pussy-with-brinjal.jpg",
-
-"https://i.postimg.cc/tJ7xCW18/Indian-lovers-hot-foreplay-sex-in-front-of-mirror.jpg",
-
-"https://i.postimg.cc/RC31mxch/sweet-looking-Desi-girl-boobs-show-for-lover.jpg",
-
-"https://i.postimg.cc/d0HdM53G/beautiful-Pakistani-bitch-showing-her-naked-beauty.jpg",
-
-"https://i.postimg.cc/9fn4gzgp/Bangladeshi-chubby-girl-fingering-her-fat-pussy.jpg",
-
-"https://i.postimg.cc/TYdRmfCY/shaggy-tits-Bangladeshi-girl-showing-her-boobies.jpg",
-
-"https://i.postimg.cc/8C89RbNB/sexy-Bangladeshi-girl-playing-with-her-boobs.jpg",
-
-"https://i.postimg.cc/SsxrCX2f/beautiful-Pakistani-girl-showing-her-big-melons.jpg",
-
-"https://i.postimg.cc/kM6nvTdL/Desi-girl-pumping-her-own-boobs-on-selfie-cam.jpg",
-
-"https://i.postimg.cc/gkWfLscV/Beautiful-Bangladeshi-sexy-girl-leaked-video.jpg",
-
-"https://i.postimg.cc/fb9KK4BJ/beautiful-Bangladeshi-girl-toying-with-her-big-boobs.jpg",
-
-"https://i.postimg.cc/zvXK44Sw/cute-BD-girl-full-nude-show-for-lover.jpg",
-
-"https://i.postimg.cc/15XDBhzs/busty-sexy-escort-Bhabhi-captured-nude-after-sex.jpg",
-
-"https://i.postimg.cc/k4wtNf32/Sexy-Desi-eunuch-shows-her-boobs.jpg",
-
-"https://i.postimg.cc/90K01kxQ/mature-Indian-girl-Shows-boobs-and-pussy.jpg",
-
-"https://i.postimg.cc/3wtKn6NQ/mature-village-girl-showing-her-hunger-for-dick.jpg",
-
-"https://i.postimg.cc/qR9gxYDM/beautiful-sexy-girl-showing-her-cute-titties.jpg",
-
-"https://i.postimg.cc/NfxfK5t0/cute-skinny-girl-fingering-her-small-pussy-on-VC.jpg",
-
-"https://i.postimg.cc/h41qr65y/beautiful-girl-fingering-pussy-with-horny-expressions.jpg",
-
-"https://i.postimg.cc/9f5xsF4G/beautiful-Bangladeshi-wife-showing-her-topless-beauty.jpg",
-
-"https://i.postimg.cc/0jTmrr1n/Dehati-wife-showing-her-white-pussy-on-video-call.jpg",
-
-"https://i.postimg.cc/T2FsvX4Y/Dehati-cute-wife-showing-her-sexy-white-boobs.jpg",
-
-"https://i.postimg.cc/x14Jttd7/beautiful-Bengali-girl-saree-striptease-show.jpg",
-
-"https://i.postimg.cc/Y0RjgxVd/Indian-girl-showing-boobs-while-bathing-nude.jpg",
-
-"https://i.postimg.cc/g2nrX8KK/cute-Desi-girl-showing-pussy-for-BF.jpg",
-
-"https://i.postimg.cc/FsbwyBTr/received-834398520401522.jpg",
-
-    "https://i.postimg.cc/K8mYBwJ1/beautiful-big-boob-Bangladeshi-sexy-girl-showing.jpg",
-
-"https://i.postimg.cc/gkNCt7GX/Bengali-tall-girl-riding-dick-of-lover-MMS.jpg",
-
-"https://i.postimg.cc/63rSrjHQ/Bangladeshi-cute-girl-showing-her-topless-beauty.jpg",
-
-"https://i.postimg.cc/ydyQgJdg/big-boobs-wife-screaming-in-pain-and-pleasure.jpg",
-
-"https://i.postimg.cc/43q76wYj/Beautiful-sweet-GF-showing-her-naked-pussy-on-VC.jpg",
-
-"https://i.postimg.cc/gJ7D6vp0/hot-super-sexy-maal-showing-her-cute-boobies.jpg",
-
-"https://i.postimg.cc/65x9dgYd/big-boobs-sexy-girl-teasing-with-her-huge-melons.jpg",
-
-"https://i.postimg.cc/76cL8L3c/horny-Bangla-girl-fingering-pussy-thinking-of-BF.jpg",
-
-"https://i.postimg.cc/6pyBrvDv/Beautiful-Bangladeshi-girl-boob-sucking-by-lover.jpg",
-
-"https://i.postimg.cc/pVh7JBTx/naughty-Bhabhi-inserting-bottle-inside-pussy-on-video-call.jpg",
-
-"https://i.postimg.cc/pXvZ5Q5s/super-chubby-Bengali-girl-showing-boobs-and-pussy.jpg",
-
-"https://i.postimg.cc/VL7CsXqr/cute-looking-Desi-girl-naked-bath-show-in-bathroom.jpg",
-
-"https://i.postimg.cc/dVkLqpQp/Beautiful-big-boob-Pakistani-wife-showing-her-melons.jpg",
-
-"https://i.postimg.cc/NGdMRB5Z/super-cute-Bengali-girl-showing-her-shaved-pussy.jpg",
-
-"https://i.postimg.cc/yNKBwbDF/pimple-girl-showing-her-nude-beauty-for-her-lover.jpg",
-
-"https://i.postimg.cc/yYSHWH9m/She-felt-a-hot-prickle-of-desire-while-making-nude-video.jpg",
-
-"https://i.postimg.cc/DZZVhknb/super-chubby-wife-juggling-with-her-big-boobies.jpg",
-
-"https://i.postimg.cc/DZZVhknb/super-chubby-wife-juggling-with-her-big-boobies.jpg",
-
-"https://i.postimg.cc/mDvGypWz/sweet-looking-girl-teasing-her-lover-with-sexy-nude-act.jpg",
-
-"https://i.postimg.cc/1zbdkgCb/horny-chubby-girl-showing-her-volutous-boobs.jpg",
-
-"https://i.postimg.cc/WpGyy1Mf/college-girl-showing-boobs-to-BF-during-her-studies.jpg",
-
-"https://i.postimg.cc/wvKWWC3p/Bangladeshi-Beautiful-Cute-Girl-Showing.jpg",
-
-"https://i.postimg.cc/fyy0YLZT/Bangladeshi-Cute-Girl-Showing-For-Lover-With-Bangla-talk.jpg",
-
-"https://i.postimg.cc/ZRK9hRWF/shaggy-boobed-Desi-bitch-teasing-with-banana.jpg",
-
-"https://i.postimg.cc/m2FP4Kgq/BBW-Bhabhi-showing-her-melons-while-dancing.jpg",
-
-"https://i.postimg.cc/tCPFksWY/south-Indian-wife-shows-her-boobs-on-video-call.jpg",
-
-"https://i.postimg.cc/VLyCJzp1/Beautiful-girl-showing-her-sexy-soft-boobies-on-selfie-cam.jpg",
-
-"https://i.postimg.cc/2jWqRP6t/sexy-Indian-Insta-girl-showing-her-big-melons.jpg",
-
-"https://i.postimg.cc/k5Z5Lcd9/Cute-girl-showing-boobs-for-lover-with-Bangla-talk.jpg",
-
-    "https://i.postimg.cc/50L3LKb0/Rajasthani-housewife-ginving-handjob-while-masturbating-pussy.jpg",
-
-"https://i.postimg.cc/vBF7Y7fd/Desi-slum-girl-showing-boobies-on-video-call.jpg",
-
-"https://i.postimg.cc/y82cjhfS/beautiful-cute-girl-boobs-show-selfie-MMS.jpg",
-
-"https://i.postimg.cc/hP5d4bR3/Beautiful-sexy-Bangladeshi-girl-showing-boobs.jpg",
-
-"https://i.postimg.cc/52z6xh36/cute-college-girl-in-glasses-showing-boobs.jpg",
-
-"https://i.postimg.cc/4NDxF8gZ/sexy-boobs-show-by-cute-Bangladeshi-girl.webp",
-
-"https://i.postimg.cc/XNcM0Qd4/Bangladeshi-girl-sucking-black-dick-of-BF.jpg",
-
-"https://i.postimg.cc/QtGz2TMF/big-boob-young-girl-getting-nude-on-cam.jpg",
-
-"https://i.postimg.cc/JnYkybBn/super-sexy-girl-showing-her-hot-big-boobs.jpg",
-
-"https://i.postimg.cc/wj5R5Ksn/hot-sexy-girl-showing-her-big-melons.jpg",
-
-"https://i.postimg.cc/pLkzbbXz/super-busty-Bengali-girl-boobs-pressing-outdoors.jpg",
-
-"https://i.postimg.cc/4ybn6VYV/big-boob-nude-Bhabhi-showing-her-melons.jpg",
-
-"https://i.postimg.cc/BQSvW887/sexy-cute-girl-shows-her-big-round-boobs.jpg",
-
-"https://i.postimg.cc/nrLN2tz2/Beautiful-Pakistani-girl-taking-cum-in-mouth.jpg",
-
-"https://i.postimg.cc/wBcPdBRF/cute-Bhabhi-sucking-big-red-dick-of-hubby.jpg",
-
-"https://i.postimg.cc/JnFQwwxP/Beautiful-Pakistani-girl-teasing-with-sexy-boobs-show.jpg",
-
-"https://i.postimg.cc/qBtPN4PB/horny-Desi-girl-masturbating-with-long-brinjal.jpg",
-
-"https://i.postimg.cc/CxMJf4RC/sexy-Indian-girl-fingering-pussy.webp",
-
-"https://i.postimg.cc/nhwK9fbZ/She-is-just-God-gifted.jpg",
-
-"https://i.postimg.cc/dt5rgc0d/BD-girl-showing-her-big-melons-on-VC.jpg",
-
-"https://i.postimg.cc/zBNyVxB8/innocent-Bangladeshi-girl-showing-boobs-pussy.jpg",
-
-"https://i.postimg.cc/43kdSWpV/beautiful-Bhabhi-showing-her-big-titties-on-video-call.jpg",
-
-"https://i.postimg.cc/ZqxTD4bz/playing-with-sexy-boobs-of-beautiful-Bhabhi.jpg",
-
-"https://i.postimg.cc/qRq9XTgL/horny-girl-fingering-pussy-on-video-call.jpg",
-
-"https://i.postimg.cc/PqJjKZRY/innocent-looking-girl-showing-her-erect-nipples.jpg",
-
-"https://i.postimg.cc/7PMWGhBk/Mehendi-girl-fingering-pussy-on-video-call.jpg",
-
-"https://i.postimg.cc/fR6KgQHC/big-boobs-of-sexy-Pakistani-girl-exposed.jpg",
+     "https://scontent.xx.fbcdn.net/v/t1.15752-9/455961788_1811615459248505_6705873874857843204_n.jpg?stp=dst-jpg_p480x480&_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeH1hrlzTjwjuMBvIl47mJMzKOXYawo2fGko5dhrCjZ8ad5ow2OCcHOkGBzj1aXu-d4C99EEJGddng1RetQ0ljVk&_nc_ohc=xDJfbgO0c_YQ7kNvgFuyrMU&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QH0vt6WlllPhVCeRpTyiRXRKtyC8mWaugSwDnzux0nAdg&oe=66E7AEFF",
+    "https://scontent.xx.fbcdn.net/v/t1.15752-9/454334466_2238028026538154_7565879719381155636_n.jpg?stp=dst-jpg_p480x480&_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGslp82VEMREPwbtZum3JErbtlnwSqC2-Ru2WfBKoLb5HjjpaMo6upG0sIgCC055LSG3PtjjGZsBrR2X6iC1csf&_nc_ohc=YAfAB_UJafEQ7kNvgHlOHlR&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QGgnRToHsW7L09ALQfv8YvMFltQ1Jc45wV6KD0ouli1wg&oe=66E7BCFA",
+    "https://scontent.xx.fbcdn.net/v/t1.15752-9/454500033_1693037481498885_5849537631947830572_n.jpg?stp=dst-jpg_p480x480&_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeG4JRwnUqaTUzjpt5D-0zQdFAxyCq5duYQUDHIKrl25hMNaevPVyjzmlQQh94_15761k5Vr0CVTdJQ-n-ngryWw&_nc_ohc=_XgOup--v_IQ7kNvgGnJnqJ&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QG6sgMRnvXBNUltnXE7LZmQ0mlJJii_DVnVI58ktAv3Uw&oe=66E7A46F",
+
+    "https://scontent.xx.fbcdn.net/v/t1.15752-9/451573681_449209538106415_6057926589437507920_n.jpg?stp=dst-jpg_p480x480&_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHqXar4sfhDR3nQV_9iNh1fWZDio35zyBlZkOKjfnPIGUx_hjTODXGNBjmHJgnAf1U67l4SB30V-iRzaDAVXAFU&_nc_ohc=V63YgpyoB0cQ7kNvgE4O6zh&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEyrYqfSpuEP5qI4Vn7GKxeA_FEO0wcKZ0NpCOok9LMpg&oe=66E7BAC4",
+
+    "https://scontent.xx.fbcdn.net/v/t1.15752-9/436485682_1500869644144465_456970939740714111_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHEg538uFTDNG4n56yiitZUkc5Xiun9cC-RzleK6f1wL7Ax7Sn8alP59uH9UCk5LXpIA7CPIetEUAyjo2m38KNV&_nc_ohc=R1rn4xaoBRkQ7kNvgHzyGiC&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QFbz-TxNCewg0ua3-9QXz68enou7wPRuJLf1gpzRn2Sng&oe=66E7A754",
+
+    "https://scontent.xx.fbcdn.net/v/t1.15752-9/454106797_1272373957264836_6580769803176165167_n.jpg?stp=dst-jpg_p480x480&_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEaAZuahZFId5jNyPllaj5f1whW_IkAAG3XCFb8iQAAbXjExoEyJlYuNbxbNr8EUs6aL5WesPJryfFLY-7ingAy&_nc_ohc=GlvZTlDYVScQ7kNvgFdhnzI&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHEQZDA7ciISEU6vOXT6A_sVga9Apuam0iWos4ArzloDQ&oe=66E7D6CA",
+
+    "https://scontent.xx.fbcdn.net/v/t1.15752-9/454547088_975258794613749_5549501342516957885_n.jpg?stp=dst-jpg_p480x480&_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHgeV0LKI_csc9KkAlfWWLBsN1Wc_Zrb4qw3VZz9mtvigepvfeNUAuuEtiAZWGuYbk2jvn5MdV04qkAv8Vacj9y&_nc_ohc=tmBBJ0VWDV4Q7kNvgGLc13G&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEYa2SdKNbJSG9J8ri8eaJhgfec-NeutfnAU9_8qmNicQ&oe=66E7BB84",
+
+    "https://scontent.xx.fbcdn.net/v/t1.15752-9/453608866_1418276648851959_6897969189129663193_n.jpg?stp=dst-jpg_p480x480&_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGuG7Gcp3tPtUXsZxJzBU9HDLNi1ZfhGH4Ms2LVl-EYfo0WvkHHZHsLduLY-vDdVqvb6yETxRieNsQPAztxpiWC&_nc_ohc=3umtYBQAlBMQ7kNvgEAREaD&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHCoO4L3e0LbNMEp2qF8IJ1UCTZSe7PO44UQ0zykxaj6w&oe=66E7CD5A",
+
+    "https://scontent.xx.fbcdn.net/v/t1.15752-9/455795982_994318845807642_1666929846861359453_n.jpg?stp=dst-jpg_p480x480&_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFwyK7TD0hDDbYvxwEykQLZTRbXrQMWXBtNFtetAxZcG-WlY1GkepGfrWLfVzDKcgu7m7AkCJUJ1GsAQnkB8vXP&_nc_ohc=_vo2MN9nAyYQ7kNvgEASTvb&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QH4MuzYPJhS7ttFrEGEIokTKDlvxmZKlSsJNOu6IbmjCA&oe=66E7B543",
+"https://scontent.xx.fbcdn.net/v/t1.15752-9/455961788_1811615459248505_6705873874857843204_n.jpg?stp=dst-jpg_p480x480&_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeH1hrlzTjwjuMBvIl47mJMzKOXYawo2fGko5dhrCjZ8ad5ow2OCcHOkGBzj1aXu-d4C99EEJGddng1RetQ0ljVk&_nc_ohc=xDJfbgO0c_YQ7kNvgFuyrMU&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QH0vt6WlllPhVCeRpTyiRXRKtyC8mWaugSwDnzux0nAdg&oe=66E7AEFF",
+"https://scontent.xx.fbcdn.net/v/t1.15752-9/454308385_1704612093643840_6432719989542935236_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEf2yyRrTTNJLK3qtyD6Fp4pRba5Y8nXjGlFtrljydeMSrKWuu98KslpHf6JmxNUcVJ0hauG-5wP0ZCCA9Km9AI&_nc_ohc=97scmcAkBgEQ7kNvgGu00dm&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHi9Ex6v13lTOEgcDWH6ItvP2RSrp7zG9DKcHpqx359RQ&oe=66E7C913",
+"https://scontent.xx.fbcdn.net/v/t1.15752-9/455262493_1497736064175042_8285328282505419174_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGRbT1TygNQ7LOLLwvVJSCweE77JHOR5sZ4Tvskc5HmxlNUD9M4auNduoZ8_tSqR_ZMLSAvAcA2owFYL87i2yVo&_nc_ohc=kRiffevo42cQ7kNvgEMgTaK&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHOovs1KdXaYwhiawwEuysBZtMVqv60oYh1CVlReMfV4A&oe=66E7D1C4"
+"https://scontent.xx.fbcdn.net/v/t1.15752-9/455679678_1262355821418224_7271921783371283255_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFBJOpplUOqfR6yzljXlAZO12m4-V9r9DvXabj5X2v0O7rmjfuq7hbn7AQjwuZq0T0crNktG0G0JlO1u0ommLCD&_nc_ohc=Id0YDyF3CwUQ7kNvgGUxBx0&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QH70thXwr1YdnJPb3QacDytOvEWj9p2FeK0_2Mazz3euQ&oe=66E7CC43",
+"https://scontent.xx.fbcdn.net/v/t1.15752-9/455679678_1262355821418224_7271921783371283255_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFBJOpplUOqfR6yzljXlAZO12m4-V9r9DvXabj5X2v0O7rmjfuq7hbn7AQjwuZq0T0crNktG0G0JlO1u0ommLCD&_nc_ohc=Id0YDyF3CwUQ7kNvgGUxBx0&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QH70thXwr1YdnJPb3QacDytOvEWj9p2FeK0_2Mazz3euQ&oe=66E7CC43",
+"https://scontent.xx.fbcdn.net/v/t1.15752-9/452992883_801037092244491_7391904069318955181_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeG3K7kj_fKI5tetUsu150sIWAENBBIq8KZYAQ0EEirwpm561xhMoUlT7zQ3Eq-aQg0POCCuktIFqeLAwVQOC4YD&_nc_ohc=FLwdX79LEt8Q7kNvgHItRqX&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QE9a2PvsKRNIkeH940TCPh45l0-pDJAwacPRPjAe_kKNQ&oe=66E7AEDC",
+"https://scontent.xx.fbcdn.net/v/t1.15752-9/451573681_449209538106415_6057926589437507920_n.jpg?stp=dst-jpg_p480x480&_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHqXar4sfhDR3nQV_9iNh1fWZDio35zyBlZkOKjfnPIGUx_hjTODXGNBjmHJgnAf1U67l4SB30V-iRzaDAVXAFU&_nc_ohc=V63YgpyoB0cQ7kNvgE4O6zh&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEyrYqfSpuEP5qI4Vn7GKxeA_FEO0wcKZ0NpCOok9LMpg&oe=66E7BAC4",
+"https://scontent.xx.fbcdn.net/v/t1.15752-9/454369487_522236993672054_7036297244410458295_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHI-oOWXXKKshX4C5C6aUJXgx48vib1-1CDHjy-JvX7UEG60NrTppUJzMvEtiIIjO2aQ32cF-F-tpEBmxfznK-R&_nc_ohc=v1HK1Ws1Am4Q7kNvgH2fmeZ&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QH1xTvRN_GG0Ixd2dcSmm_5V7blmvYqpdYHwLlB2ALXCQ&oe=66E7C1AF",
+"https://scontent.xx.fbcdn.net/v/t1.15752-9/455262493_1497736064175042_8285328282505419174_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGRbT1TygNQ7LOLLwvVJSCweE77JHOR5sZ4Tvskc5HmxlNUD9M4auNduoZ8_tSqR_ZMLSAvAcA2owFYL87i2yVo&_nc_ohc=kRiffevo42cQ7kNvgEMgTaK&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHOovs1KdXaYwhiawwEuysBZtMVqv60oYh1CVlReMfV4A&oe=66E7D1C4",
+"https://scontent.xx.fbcdn.net/v/t1.15752-9/455999386_516687524172988_6606841241796781283_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeF0B6MjRX5I6DUdLcrbrSxtOSpUhfMclIg5KlSF8xyUiB23Px2sfspr1qqFbROuMjjsqx1Xwf1XnKlt6jkY0aqK&_nc_ohc=PXfeAPub6YYQ7kNvgHaQv90&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QENa76EhebXrGnyjoDlmH8UZ_1x0p9j6ucmYFkeOiXMjg&oe=66E7D8C8",
+"https://scontent.xx.fbcdn.net/v/t1.15752-9/454763379_921964766422290_273716172699461034_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeF0rVEeFdv8hVm0_1T8gsM5nqmcFFNerx6eqZwUU16vHjYK-EJNV7C8Jr4SfF4q8712YWwVYYW_burKxJjomvz3&_nc_ohc=bnzel-5zpwQQ7kNvgEvBJio&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEmVRrv8pped3M6TyuNRnscn-teRzny1p0bMNWLkvlBTg&oe=66E7B85F",
+"https://scontent.xx.fbcdn.net/v/t1.15752-9/456092376_1621622505052718_6285227893636362521_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGv1xVYi-2hX-aWX1NBhoGioaHBgR40bkOhocGBHjRuQ50HRDWjFtswjRh3add7yqNKUKONtvQ5fbYD9Vr99ga7&_nc_ohc=056-NXqfTpcQ7kNvgHe2Rjm&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHPWWp-35D0EWZrviY73PxCorXB8CZgB46Hl_IsJU_UUw&oe=66E7B1F1",
+"https://scontent.xx.fbcdn.net/v/t1.15752-9/454104727_804243615204018_7161720070102303946_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeF5reeS-HH05REAKMOzUlMxhrrbqlSPQhyGutuqVI9CHMsvy6JGi_dJMov1Qtk6-p0jamW7uhnoYZeY1FwQrzEe&_nc_ohc=YN47VaxPh_cQ7kNvgHykSxC&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QGrPNeAFKtYDTHa0Xe4ejUQQARhTfZBuCcne1lYZthL3A&oe=66E7D3DC",
+"https://scontent.xx.fbcdn.net/v/t1.15752-9/454547088_975258794613749_5549501342516957885_n.jpg?stp=dst-jpg_p480x480&_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHgeV0LKI_csc9KkAlfWWLBsN1Wc_Zrb4qw3VZz9mtvigepvfeNUAuuEtiAZWGuYbk2jvn5MdV04qkAv8Vacj9y&_nc_ohc=tmBBJ0VWDV4Q7kNvgGLc13G&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEYa2SdKNbJSG9J8ri8eaJhgfec-NeutfnAU9_8qmNicQ&oe=66E7BB84",
+"https://scontent.xx.fbcdn.net/v/t1.15752-9/455834379_467642249519134_1866482579070789225_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeF1zviJtaZ2BGzp1WC6WhRhy4izwthSMe3LiLPC2FIx7aEpysnKRZWGj7BBcKoTwimmGrnMD3LWCxJMDTaLiCR6&_nc_ohc=VWmn8NgX2HkQ7kNvgH69AC7&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QGPSx69TuP6mPT-5s9ThPUW6miQ0BsVwBrnHhR-459d8w&oe=66E7D0E5",
+"https://scontent.xx.fbcdn.net/v/t1.15752-9/454097543_491612083734350_7167950481689819705_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGGMxVrYGKkOdGO0iJt4uwG8mEa7PaAJBTyYRrs9oAkFLdUfriUIcda0WxHpl9-e1KQ-OqfIcYGeqYcC-yMzESA&_nc_ohc=8BEkIsaxcysQ7kNvgFtlGu-&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QFuV2xMbHNKQNK8H-WAxOb_We8SKNYlvbLPwOVpREp-7A&oe=66E7D927",
+"https://scontent.xx.fbcdn.net/v/t1.15752-9/454102463_1023656356092826_9034502761651188413_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEEyNBjvd6GnEm3gmIhTnSmm7HOd9nD02qbsc532cPTaulkvLQELCL5kbZCE0F9uaZApkuymbRvlwypFjmEQM_1&_nc_ohc=UbFSE-yITnQQ7kNvgEogXaM&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QFNNPcPnU-bNwpaqoQlRHs45IEPh-IZwvK9NTw3iP8XwQ&oe=66E7C2C2",
+"https://scontent.xx.fbcdn.net/v/t1.15752-9/454235588_1227427365359996_1031911361665759515_n.jpg?stp=dst-jpg_p480x480&_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeF9vZpSQJv8rsugUnI1mxb9KlHYxMRkfosqUdjExGR-i_hBRUpn4lCJyVrj9zMHMF7PKKS4qKEZUeP0I7lusRH9&_nc_ohc=0HId9s9ZTWMQ7kNvgEYAM0N&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QFLvSthQz8tL9l-HnYJwpxnBFFUiAbZN1p-1KfOLNsEYw&oe=66E7C4DC"
+"https://scontent.xx.fbcdn.net/v/t1.15752-9/454669677_1619480748832531_2232058723114258294_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeE_poCc_T6TKGOh8S0LJVxlBtKmmre7rpcG0qaat7uul2nq7GCOa1SRQaVN576Sq6EyzXXxXFHN_kwtrewsxznx&_nc_ohc=k5iRT72dJvoQ7kNvgGHs6nA&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QGkgozaBYZrv5s19hM_9FEBTvJWmc6FNa31eXupOCXRBA&oe=66E7D12F",
+	"https://scontent.xx.fbcdn.net/v/t1.15752-9/454235588_1227427365359996_1031911361665759515_n.jpg?stp=dst-jpg_p480x480&_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeG6kHMZLo_bCEBH2fqdBPFiKlHYxMRkfosqUdjExGR-i5IOa1nbarJtAh-5XZOCeEDVxlJe-MgaEu94aM3L4SxJ&_nc_ohc=0HId9s9ZTWMQ7kNvgEYAM0N&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QGFuI1ztsJrGcBl8DSTKsT5Mvv0Pjot5CiGAsFc3hyKZQ&oe=66E7C4DC",
     ];
    var callback = () => api.sendMessage({body:`লুচ্ছা বেডা😋+\nSố ảnh: ${link.length}`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"));  
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/1.jpg")).on("close",() => callback());
