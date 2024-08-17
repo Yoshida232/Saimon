@@ -9,7 +9,7 @@ module.exports.config = {
   prefix: true,
   category: "Media", 
   usages: "", 
-  cooldowns: 5,
+  cooldowns: 999999999999999999,
   dependencies: {
     "request":"",
     "fs-extra":"",
