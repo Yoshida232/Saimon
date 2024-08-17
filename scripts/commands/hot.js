@@ -7,13 +7,12 @@ module.exports.config = {
   credits: "Nayan",
   description: "Random stupid videos for some dirty mind ugly and useless people's",
   prefix: true,
-  category: "Media", 
+  category: "
   usages: "", 
-  cooldowns: 999999999999999999,
+  cooldowns: 5,
   dependencies: {
-    "request":"",
-    "fs-extra":"",
-    "axios":""
+    
+    "fs-extra":"
   }
 };
 
