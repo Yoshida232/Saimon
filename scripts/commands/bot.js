@@ -1,13 +1,15 @@
 const tl = [
-  "আহ শুনা আমার তোমার অলিতে গলিতে উম্মাহ😇😘",
-  " কি গো সোনা আমাকে ডাকছ কেনো",
-  "বার বার আমাকে ডাকস কেন😡",
-  "আহ শোনা আমার আমাকে এতো ডাক্তাছো কেনো আসো বুকে আশো🥱",
-  "হুম জান তোমার অইখানে উম্মমাহ😷😘",
-  " আসসালামু আলাইকুম বলেন আপনার জন্য কি করতে পারি",
-  "আমাকে এতো না ডেকে বস নয়নকে একটা গফ দে 🙄",
-  "jang hanga korba",
-  "jang bal falaba🙂"
+  "🎐Why are you calling me? Only one man can call me and it's my husband Cursed Xio💌",
+  " What the hack is your problem you loser?",
+  "Sorry! I've a boyfriend😒",
+  "Excuse me! I've a boyfriend 😒",
+  "Excuse me, I'm married. Don't tease me or I'll tell my husband Cursed Xio💌",
+  "My Husband Cursed Xio don't give a shit about your text😒",
+  "Don't call me! Call my boss Cursed Xio",
+  "You mean my master Cursed Xio?",
+  "Gentlemen, you can't fight in here. This is the war room.",
+  "Before you marry a person, you should first make them use a computer with slow Internet to see who they really are.",
+"If you support Israel! Then you're the top MADAFAKA/Bit*ch/PiG/Ga*y/Useless/Dirty/A animal without brain in this existence! Fak Q Isr*ael"
 ];
 const lang = "bn";
 
