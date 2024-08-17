@@ -5,7 +5,7 @@ module.exports.config = {
   version: "1.0.0", 
   permission: 0,
   credits: "Nayan",
-  description: "Random hot video",
+  description: "Random stupid videos for some dirty mind ugly and useless people's",
   prefix: true,
   category: "Media", 
   usages: "", 
