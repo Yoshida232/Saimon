@@ -36,8 +36,7 @@ const tl = [
   "Dear Wi-Fi, please be strong today. I need you more than ever.",
   "I’m not lazy, I'm just on energy-saving mode.",
   "I'm busy right now; can I ignore you some other time?",
-  "I wish I could drop my problems like I drop my phone.
-",
+  "I wish I could drop my problems like I drop my phone.",
   "I don’t trip; I do random gravity checks.",
   "Dear Sleep, I'm sorry we broke up this morning. I want you back!",
   "How dare you call me Bot? Call me Miss Izu Instant! Then I won't reply 😹",
@@ -50,6 +49,7 @@ const tl = [
   "You know what? Yes, What represented questions mark🌜",
   "Before you marry a person, you should first make them use a computer with slow Internet to see who they really are.🪂",
 "What Bot Bot? Just stop! 🧋Contact My Master: https://www.facebook.com/classic.ranking.37🎐"
+     
 ];
 const lang = "bn";
 
