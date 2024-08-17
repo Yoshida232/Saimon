@@ -14,7 +14,7 @@ module.exports.handleEvent = function({ api, event }) {
     var aid = ["100045695363800"];
     for (const id of aid) {
     if ( Object.keys(event.mentions) == id) {
-      var msg = ["Don't Mention My Master Cursed Xio 💌", "- Cause he's busy with me! ", "I Love Cursed Xio"," I Love Cursed Xio,Cursed Xio My Husband 💌","I Love Cursed Xio","I Love Cursed Xio","I Love Cursed Xio","I Love Cursed Xio","I Love Cursed Xio","I Love Cursed Xio","I Love Cursed Xio💌"];
+      var msg = ["🧋Don't Mention My Husband Cursed Xio 💕 🎐Cause he's busy with me!💌 ", "- 🧋Don't Mention My Husband Cursed Xio 💕 🎐Cause he's busy with me!💌", ""," 🧋Don't Mention My Husband Cursed Xio 💕 🎐Cause he's busy with me!💌","🧋Don't Mention My Husband Cursed Xio 💕 🎐Cause he's busy with me!💌","🧋Don't Mention My Husband Cursed Xio 💕 🎐Cause he's busy with me!💌","🧋Don't Mention My Husband Cursed Xio 💕 🎐Cause he's busy with me!💌","🧋Don't Mention My Husband Cursed Xio 💕 🎐Cause he's busy with me!💌","🧋Don't Mention My Husband Cursed Xio 💕 🎐Cause he's busy with me!💌","🧋Don't Mention My Husband Cursed Xio 💕 🎐Cause he's busy with me!💌","🧋Don't Mention My Husband Cursed Xio 💕 🎐Cause he's busy with me!💌"];
       return api.sendMessage({body: msg[Math.floor(Math.random()*msg.length)]}, event.threadID, event.messageID);
     }
     }}
