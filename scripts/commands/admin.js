@@ -45,9 +45,19 @@ var callback = () => api.sendMessage({body:`
 •┄┅═════❁🌺❁═════┅┄•
 
 
-
-
-
+𝙁𝙖𝙘𝙚𝙗𝙤𝙤𝙠, 𝙔𝙤𝙪𝙏𝙪𝙗𝙚 𝙖𝙣𝙙 𝙈𝙚𝙨𝙨𝙚𝙣𝙜𝙚𝙧 𝙜𝙧𝙤𝙪𝙥 𝙡𝙞𝙣𝙠𝙨
+페이스북, 유튜브, 메신저 링크
+Feisubukku, Yūchūbu, Messenjā no gurūpurinku
+Facebook,YouTube hé Messenger qún zǔ liànjiē
+رابط مجموعة الفيسبوك واليوتيوب والماسنجر
+Link sa Facebook, YouTube at Messenger
+Collegamento a Facebook, YouTube e Messenger
+Facebook, YouTube dan pautan messenger
+Ссылка на группы в Facebook, YouTube и мессенджерах
+ফেসবুক, ইউটিউব এবং ম্যাসেঞ্জার গ্রুপ লিঙ্ক
+Tautan grup Facebook, YouTube, dan Messenger
+Enlace de grupo de Facebook, YouTube y Messenger
+Facebook, YouTube och Messenger-grupplänk
 
 
 •┄┅═══🥭通訊媒介🥭═══┅┄• 
