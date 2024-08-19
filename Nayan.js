@@ -14,10 +14,10 @@ module.exports = async ({ api, event }) => {
     },
     greetings: {
       status: false,
-      morning: `goodmorning everyone, have a nice day.`,
-      afternoon: `goodafternoon everyone, don't forget to eat your lunch.`,
-      evening: `goodevening everyone, don't forget to eat.`,
-      sleep: `goodnight everyone, time to sleep.`,
+      morning: `𝐠𝐨𝐨𝐝𝐦𝐨𝐫𝐧𝐢𝐧𝐠 𝐞𝐯𝐞𝐫𝐲𝐨𝐧𝐞, 𝐡𝐚𝐯𝐞 𝐚 𝐧𝐢𝐜𝐞 𝐝𝐚𝐲.`,
+      afternoon: `𝐠𝐨𝐨𝐝𝐚𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧 𝐞𝐯𝐞𝐫𝐲𝐨𝐧𝐞, 𝐝𝐨𝐧'𝐭 𝐟𝐨𝐫𝐠𝐞𝐭 𝐭𝐨 𝐞𝐚𝐭 𝐲𝐨𝐮𝐫 𝐥𝐮𝐧𝐜𝐡.`,
+      evening: `𝙜𝙤𝙤𝙙𝙚𝙫𝙚𝙣𝙞𝙣𝙜 𝙚𝙫𝙚𝙧𝙮𝙤𝙣𝙚, 𝙙𝙤𝙣'𝙩 𝙛𝙤𝙧𝙜𝙚𝙩 𝙩𝙤 𝙚𝙖𝙩.`,
+      sleep: `𝐆𝐨𝐨𝐝𝐧𝐢𝐠𝐡𝐭 𝐞𝐯𝐞𝐫𝐲𝐨𝐧𝐞, 𝐭𝐢𝐦𝐞 𝐭𝐨 𝐬𝐥𝐞𝐞𝐩.`,
       note: 'greetings every morning, afternoon and evening. the timezone is located in Asia/Dhaka'
     },
     reminder: {
