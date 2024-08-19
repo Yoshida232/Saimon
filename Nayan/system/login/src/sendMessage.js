@@ -24,7 +24,7 @@ module.exports = function (defaultFuncs, api, ctx) {
   function uploadAttachment(attachments, callback) {
     var uploads = [];
 
-    // Create an array of promises
+    // create an array of promises
     for (var i = 0; i < attachments.length; i++) {
       if (!utils.isReadableStream(attachments[i])) throw { error: "Attachment should be a readable stream and not " + utils.getType(attachments[i]) + "." };
       var form = {
@@ -45,10 +45,11 @@ module.exports = function (defaultFuncs, api, ctx) {
       );
     }
 
-    // Resolve all promises
+    // resolve all promises
     bluebird
       .all(uploads)
-      .then(resData => callback(null, resData))
+      .then(resData => callback(null, resData)
+      )
       .catch(function (err) {
         log.error("uploadAttachment", err);
         return callback(err);
@@ -76,6 +77,7 @@ module.exports = function (defaultFuncs, api, ctx) {
       });
   }
 
+
   function sendContent(form, threadID, isSingleUser, messageAndOTID, callback) {
     // There are three cases here:
     // 1. threadID is of type array, where we're starting a new group chat with users
@@ -87,14 +89,16 @@ module.exports = function (defaultFuncs, api, ctx) {
       form["specific_to_list[" + threadID.length + "]"] = "fbid:" + ctx.userID;
       form["client_thread_id"] = "root:" + messageAndOTID;
       log.info("sendMessage", "Sending message to multiple users: " + threadID);
-    } else {
+    }
+    else {
       // This means that threadID is the id of a user, and the chat
       // is a single person chat
       if (isSingleUser) {
         form["specific_to_list[0]"] = "fbid:" + threadID;
         form["specific_to_list[1]"] = "fbid:" + ctx.userID;
         form["other_user_fbid"] = threadID;
-      } else form["thread_fbid"] = threadID;
+      }
+      else form["thread_fbid"] = threadID;
     }
 
     if (ctx.globalOptions.pageID) {
@@ -134,17 +138,26 @@ module.exports = function (defaultFuncs, api, ctx) {
         if (utils.getType(err) == "Object" && err.error === "Not logged in.") ctx.loggedIn = false;
         return callback(err);
       });
-  }
+    }
 
   function send(form, threadID, messageAndOTID, callback, isGroup) {
-    if (utils.getType(threadID) === "Array") sendContent(form, threadID, false, messageAndOTID, callback);
+ // đôi lời từ ai đó :v 
+ // cái này chỉ fix send ko được tin nhắn thôi chứ i cũng đôn nâu cách fix lắm nên là có gì ae fix giùm nha kkk
+  if (utils.getType(threadID) === "Array") sendContent(form, threadID, false, messageAndOTID, callback);
     else {
-      var THREADFIX = "ThreadID".replace("ThreadID", threadID); // Placeholder, replace with actual logic if needed
-      if (THREADFIX.length <= 15) sendContent(form, threadID, !isGroup, messageAndOTID, callback);
-      else if (THREADFIX.length >= 15 && THREADFIX.indexOf(1) != 0) sendContent(form, threadID, threadID.length === 15, messageAndOTID, callback);
-      else sendContent(form, threadID, !isGroup, messageAndOTID, callback);
+      var THREADFIX = "ThreadID".replace("ThreadID",threadID); // i cũng đôn nâu
+        if (THREADFIX.length <= 15) sendContent(form, threadID, !isGroup, messageAndOTID, callback);
+        else if (THREADFIX.length >= 15 && THREADFIX.indexOf(1) != 0) sendContent(form, threadID, threadID.length === 15, messageAndOTID, callback);
+        else sendContent(form, threadID, !isGroup, messageAndOTID, callback);
     }
   }
+
+    /* 
+    * Giải Thích : 
+    * Theo Sự Quan Sát Của ... Thì Thấy Rằng Số UID Facebook vs ThreadID Có Sự Trên Lệch Số ( Số ) Với Nhau
+    * nên đã lợi dụng điều đó làm main :v 
+    ! utils.getType(threadID) Sẽ Không Được Sử Dụng Nữa Vì Nó Toàn Là Undefined :v
+    */
 
   function handleUrl(msg, form, callback, cb) {
     if (msg.url) {
@@ -154,7 +167,8 @@ module.exports = function (defaultFuncs, api, ctx) {
         form["shareable_attachment[share_params]"] = params;
         cb();
       });
-    } else cb();
+    }
+    else cb();
   }
 
   function handleLocation(msg, form, callback, cb) {
@@ -199,11 +213,12 @@ module.exports = function (defaultFuncs, api, ctx) {
         files.forEach(function (file) {
           var key = Object.keys(file);
           var type = key[0]; // image_id, file_id, etc
-          form["" + type + "s"].push(file[type]); // Push the id
+          form["" + type + "s"].push(file[type]); // push the id
         });
         cb();
       });
-    } else cb();
+    }
+    else cb();
   }
 
   function handleMention(msg, form, callback, cb) {
@@ -211,4 +226,109 @@ module.exports = function (defaultFuncs, api, ctx) {
       for (let i = 0; i < msg.mentions.length; i++) {
         const mention = msg.mentions[i];
         const tag = mention.tag;
-        if
+        if (typeof tag !== "string") return callback({ error: "Mention tags must be strings." });
+        const offset = msg.body.indexOf(tag, mention.fromIndex || 0);
+        if (offset < 0) log.warn("handleMention", 'Mention for "' + tag + '" not found in message string.');
+        if (mention.id == null) log.warn("handleMention", "Mention id should be non-null.");
+
+        const id = mention.id || 0;
+        const emptyChar = '\u200E';
+        form["body"] = emptyChar + msg.body;
+        form["profile_xmd[" + i + "][offset]"] = offset + 1;
+        form["profile_xmd[" + i + "][length]"] = tag.length;
+        form["profile_xmd[" + i + "][id]"] = id;
+        form["profile_xmd[" + i + "][type]"] = "p";
+      }
+    }
+    cb();
+  }
+
+  return function sendMessage(msg, threadID, callback, replyToMessage, isGroup) {
+    typeof isGroup == "undefined" ? isGroup = null : "";
+    if (!callback && (utils.getType(threadID) === "Function" || utils.getType(threadID) === "AsyncFunction")) return threadID({ error: "Pass a threadID as a second argument." });
+    if (!replyToMessage && utils.getType(callback) === "String") {
+      replyToMessage = callback;
+      callback = function () { };
+    }
+
+    var resolveFunc = function () { };
+    var rejectFunc = function () { };
+    var returnPromise = new Promise(function (resolve, reject) {
+      resolveFunc = resolve;
+      rejectFunc = reject;
+    });
+
+    if (!callback) {
+      callback = function (err, data) {
+        if (err) return rejectFunc(err);
+        resolveFunc(data);
+      };
+    }
+
+    var msgType = utils.getType(msg);
+    var threadIDType = utils.getType(threadID);
+    var messageIDType = utils.getType(replyToMessage);
+
+    if (msgType !== "String" && msgType !== "Object") return callback({ error: "Message should be of type string or object and not " + msgType + "." });
+
+    // Changing this to accomodate an array of users
+    if (threadIDType !== "Array" && threadIDType !== "Number" && threadIDType !== "String") return callback({ error: "ThreadID should be of type number, string, or array and not " + threadIDType + "." });
+
+    if (replyToMessage && messageIDType !== 'String') return callback({ error: "MessageID should be of type string and not " + threadIDType + "." });
+
+    if (msgType === "String") msg = { body: msg };
+    var disallowedProperties = Object.keys(msg).filter(prop => !allowedProperties[prop]);
+    if (disallowedProperties.length > 0) return callback({ error: "Dissallowed props: `" + disallowedProperties.join(", ") + "`" });
+
+    var messageAndOTID = utils.generateOfflineThreadingID();
+
+    var form = {
+      client: "mercury",
+      action_type: "ma-type:user-generated-message",
+      author: "fbid:" + ctx.userID,
+      timestamp: Date.now(),
+      timestamp_absolute: "Today",
+      timestamp_relative: utils.generateTimestampRelative(),
+      timestamp_time_passed: "0",
+      is_unread: false,
+      is_cleared: false,
+      is_forward: false,
+      is_filtered_content: false,
+      is_filtered_content_bh: false,
+      is_filtered_content_account: false,
+      is_filtered_content_quasar: false,
+      is_filtered_content_invalid_app: false,
+      is_spoof_warning: false,
+      source: "source:chat:web",
+      "source_tags[0]": "source:chat",
+      body: msg.body ? msg.body.toString() : "",
+      html_body: false,
+      ui_push_phase: "V3",
+      status: "0",
+      offline_threading_id: messageAndOTID,
+      message_id: messageAndOTID,
+      threading_id: utils.generateThreadingID(ctx.clientID),
+      "ephemeral_ttl_mode:": "0",
+      manual_retry_cnt: "0",
+      has_attachment: !!(msg.attachment || msg.url || msg.sticker),
+      signatureID: utils.getSignatureID(),
+      replied_to_message_id: replyToMessage
+    };
+  
+    handleLocation(msg, form, callback, () =>
+      handleSticker(msg, form, callback, () =>
+        handleAttachment(msg, form, callback, () =>
+          handleUrl(msg, form, callback, () =>
+            handleEmoji(msg, form, callback, () =>
+              handleMention(msg, form, callback, () =>
+                send(form, threadID, messageAndOTID, callback, isGroup)
+              )
+            )
+          )
+        )
+      )
+    );
+
+    return returnPromise;
+  };
+};
