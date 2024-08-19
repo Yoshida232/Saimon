@@ -109,6 +109,6 @@ TYPE /admin 🥥
 
 `,attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
     fs.unlinkSync(__dirname + "/cache/1.png"));  
-      return request(encodeURI(`https://cdn.fbsbx.com/v/t59.2708-21/411618281_737489451591731_6258807383906226824_n.gif?_nc_cat=105&ccb=1-7&_nc_sid=cf94fc&_nc_ohc=vpau4_zZiXcQ7kNvgH_hE27&_nc_ht=cdn.fbsbx.com&oh=03_Q7cD1QE4WIs5nALr_Y96PyodMXLeDIHv5xV6SF_dK635vnXYIQ&oe=66C3C501`)).pipe(
+      return request(encodeURI(`https://cdn.fbsbx.com/v/t59.2708-21/371727021_659110562862810_174451643249293584_n.gif?_nc_cat=102&ccb=1-7&_nc_sid=cf94fc&_nc_ohc=sMy2Fo-BlnIQ7kNvgGyjc0J&_nc_ht=cdn.fbsbx.com&oh=03_Q7cD1QHtOK2x8D867UhAMs3Jdz0VwibTastywt2wf1jGt3YzEA&oe=66C4FA33`)).pipe(
 fs.createWriteStream(__dirname+'/cache/1.png')).on('close',() => callback());
    };
